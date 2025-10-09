@@ -60,9 +60,13 @@ public class Medico {
         return crm;
     }
 
+    public String getTelefone() {return telefone; }
+
     public Especialidade getEspecialidade() {
         return especialidade;
     }
+
+    public Endereco getEndereco() {return endereco; }
 
 
     public void atualizarInformacoes(@Valid DadosAtualizacaoMedico dados) {
