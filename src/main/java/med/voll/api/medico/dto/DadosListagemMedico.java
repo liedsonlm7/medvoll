@@ -1,4 +1,7 @@
-package med.voll.api.medico;
+package med.voll.api.medico.dto;
+
+import med.voll.api.medico.model.Especialidade;
+import med.voll.api.medico.model.Medico;
 
 public record DadosListagemMedico(Long id, String nome, String email, String crm, Especialidade especialidade) {
 
