@@ -1,13 +1,13 @@
-package med.voll.api.paciente.model;
+package med.voll.api.domain.paciente.model;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.voll.api.endereco.model.Endereco;
-import med.voll.api.paciente.dto.DadosAtualizacaoPaciente;
-import med.voll.api.paciente.dto.DadosCadastroPaciente;
+import med.voll.api.domain.endereco.model.Endereco;
+import med.voll.api.domain.paciente.dto.DadosAtualizacaoPaciente;
+import med.voll.api.domain.paciente.dto.DadosCadastroPaciente;
 
 @Getter
 @EqualsAndHashCode(of = "id")
