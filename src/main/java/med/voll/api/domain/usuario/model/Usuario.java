@@ -1,4 +1,4 @@
-package med.voll.api.domain.usuario;
+package med.voll.api.domain.usuario.model;
 
 
 import jakarta.persistence.*;
