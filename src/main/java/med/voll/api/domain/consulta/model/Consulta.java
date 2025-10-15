@@ -1,6 +1,8 @@
 package med.voll.api.domain.consulta.model;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.NotNull;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -31,4 +33,6 @@ public class Consulta {
     private Paciente paciente;
 
     private LocalDateTime data;
+
+
 }
