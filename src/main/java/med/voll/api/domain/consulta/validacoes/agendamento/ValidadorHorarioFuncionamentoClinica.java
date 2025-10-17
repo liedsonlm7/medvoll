@@ -1,4 +1,4 @@
-package med.voll.api.domain.consulta.validacoes;
+package med.voll.api.domain.consulta.validacoes.agendamento;
 
 import med.voll.api.domain.ValidacaoException;
 import med.voll.api.domain.consulta.dto.DadosAgendamentoConsulta;
@@ -14,7 +14,7 @@ public class ValidadorHorarioFuncionamentoClinica implements IValidadorAgendamen
 
         var domingo = dataconsulta.getDayOfWeek().equals(DayOfWeek.SUNDAY);
         var antesDaAberturaClinica = dataconsulta.getHour() < 7;
-        var depoisDoEncerramentoClinica = dataconsulta.getHour() < 18;
+        var depoisDoEncerramentoClinica = dataconsulta.getHour() > 18;
 
         if (domingo || antesDaAberturaClinica || depoisDoEncerramentoClinica) {
             throw new ValidacaoException("Consulta fora do horário de funcionamento da clínica");
