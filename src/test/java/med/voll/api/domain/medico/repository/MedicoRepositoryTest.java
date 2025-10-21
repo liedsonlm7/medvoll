@@ -35,7 +35,7 @@ class MedicoRepositoryTest {
     private TestEntityManager em;
 
     @Test
-    @DisplayName("Deve devolver null quando unico medico cadastrado nao esta disponivel na data")
+    @DisplayName("Deveria devolver null quando unico medico cadastrado nao esta disponivel na data")
     void escolherMedicoAleatorioLivreNaDataCase1() {
         // given ou arrange
         var proximaSegundaAs10 = LocalDate.now().with(TemporalAdjusters.next(DayOfWeek.MONDAY)).atTime(10, 0);
@@ -52,7 +52,7 @@ class MedicoRepositoryTest {
     }
 
     @Test
-    @DisplayName("Deve devolver medico quando ele estiver disponivel na data")
+    @DisplayName("Deveria devolver medico quando ele estiver disponivel na data")
     void escolherMedicoAleatorioLivreNaDataCase2() {
         // given ou arrange
         var proximaSegundaAs10 = LocalDate.now().with(TemporalAdjusters.next(DayOfWeek.MONDAY)).atTime(10, 0);
